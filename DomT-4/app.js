@@ -49,3 +49,35 @@ for(var i =0; i < allList.length; i++){
 
 let li = document.getElementsByTagName('li');
 console.log(li);
+
+
+
+//query selector for select one item 
+//Make the 2nd item have green background color
+
+let firstlist = document.querySelector('li:first-child');
+firstlist.style.backgroundColor = "green"
+
+// Make the 3rd item invisible
+let hidelist = document.querySelector('li:nth-child(3)');
+
+hidelist.style.visibility = "hidden"
+
+// hidelist.style.display = "none";
+
+
+//query selector all
+
+ //2nd list font color green 
+let listtwo = document.querySelectorAll('li');
+listtwo[1].style.color = "green";
+
+//Choose all the odd elements and make their background green using QuerySelectorALL﻿
+let odd = document.querySelectorAll('li:nth-child(odd)');
+console.log(odd + "odd")
+
+for(let i = 0; i< odd.length; i++){
+    odd[i].style.backgroundColor = "green"
+    
+}
+
