@@ -81,3 +81,76 @@ for(let i = 0; i< odd.length; i++){
     
 }
 
+// PART 2
+
+var itemlist = document.querySelector('#items');
+//parentNode
+// console.log(itemlist.parentnode)
+// itemlist.parentNode.style.backgroundColor = 'grey'
+
+//PARENT ELEMENT
+// console.log(itemlist.parentElement)
+// itemlist.parentElement.style.backgroundColor = 'grey'
+
+//children
+// console.log(itemlist.children)
+// console.log(itemlist.children[1]);
+// itemlist.children[1].style.backgroundColor = "yellow";
+
+//First child
+// console.log(itemlist.firstChild);
+
+//firstElementChild
+// console.log(itemlist.firstElementChild);
+// itemlist.firstElementChild.textContent = "Hello 1 "
+
+//lastChild
+// console.log(itemlist.lastChild);
+
+//lastElementChild
+// console.log(itemlist.lastElementChild);
+// itemlist.lastElementChild.textContent = "Hello 4"
+
+//nextSibling
+// console.log(itemlist.nextSibling);
+
+//nextElementSibling
+// console.log(itemlist.nextElementSibling)
+
+//previousSibling
+// console.log(itemlist.previousElementSibling)
+
+//previousElementSibling
+// console.log(itemlist.previousElementSibling)
+// itemlist.previousElementSibling.style.color ="red";
+
+//methods for creating ---
+
+//createElement
+var newdiv = document.createElement('div');
+
+//Add class
+newdiv.className = 'hello';
+
+//Add id
+newdiv.id = "hello 1"
+
+//Add attr
+newdiv.setAttribute('title','hello div')
+
+//create text node
+var newdivtext = document.createTextNode('hello world')
+
+//add text to div
+ newdiv.appendChild(newdivtext);
+
+
+let parentnode = document.getElementById('items')
+let newli = document.createElement('li');
+newli.textContent = "Hello World "
+console.log(newli)
+
+console.log(parentnode.innerHTML)
+ parentnode.innerHTML = '<li>Helloworld</li>' + ' <li class="list-group-item">Item 1</li>'+ '<li>Helloworld</li>' +parentnode.innerHTML
+console.log(newdiv)
+
