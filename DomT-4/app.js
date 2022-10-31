@@ -29,7 +29,7 @@ mainheader.style.borderBottom = 'solid 3px #000';
 title.style.color = "green"
 title.style.fontWeight = "bold"
 
-/get element by classname
+//get element by classname
 var allList = document.getElementsByClassName('list-group-item');
 console.log(allList)
 console.log(allList[1]);
@@ -45,3 +45,7 @@ for(var i =0; i < allList.length; i++){
     allList[i].style.fontWeight = "bold"
 }
 
+//get element by tag name
+
+let li = document.getElementsByTagName('li');
+console.log(li);
