@@ -28,3 +28,20 @@ console.log(title)
 mainheader.style.borderBottom = 'solid 3px #000';
 title.style.color = "green"
 title.style.fontWeight = "bold"
+
+/get element by classname
+var allList = document.getElementsByClassName('list-group-item');
+console.log(allList)
+console.log(allList[1]);
+
+// allList[1].textContent = "Hello 2"
+
+
+
+allList[2].style.backgroundColor = "green"
+
+// iterating throuh all list and styling coz its an array
+for(var i =0; i < allList.length; i++){
+    allList[i].style.fontWeight = "bold"
+}
+
